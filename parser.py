@@ -54,7 +54,7 @@ def parse_file( f, points, transform, screen, color ):
                     add_box( points, args[0], args[1], args[2], args[3], args[4], args[5] )
                     matrix_mult(transform[-1], points)
                     draw_polygons(points, screen, color)
-                
+                    
                 points=[]
             
             else:
@@ -77,8 +77,8 @@ def parse_file( f, points, transform, screen, color ):
                         r = make_rotY( angle )
                     elif cmd == 'zrotate':
                         r = make_rotZ( angle )
-                        matrix_mult(transform[-1], r)
-                        transform[-1]=r
+                    matrix_mult(transform[-1], r)
+                    transform[-1]=r
                 
         elif cmd=='push':
             transform.append(new_matrix())

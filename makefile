@@ -1,6 +1,6 @@
 run:
-	python main.py myrobot
+	python main.py script
 
 clean:
-	rm *pyc
-	rm *~
+	rm -f *pyc
+	rm -f *~
