@@ -136,7 +136,7 @@ def scalar_mult( matrix, x ):
     for r in range( len( matrix[0] ) ):
         for c in range( len( matrix ) ):
             matrix[c][r] *= x
-            
+
 #m1 * m2 -> m2
 def matrix_mult( m1, m2 ):
     
